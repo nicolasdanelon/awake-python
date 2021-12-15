@@ -1,15 +1,23 @@
 import pyautogui
 import time
+import datetime
 
 sleep = 20
 pyautogui.FAILSAFE = False
 
-while(True):
+try:
+  while(True):
+    now = datetime.datetime.now()
     currentX, currentY = pyautogui.position()
-    pyautogui.moveTo(currentX+15, currentY)
-    time.sleep(sleep)
-    currentX, currentY = pyautogui.position()
-    pyautogui.moveTo(currentX-15, currentY)
+    pyautogui.moveTo(currentX+1, currentY)
+    print(f"{now.hour}:{now.minute}:{now.second}\n")
     time.sleep(sleep)
 
+    currentX, currentY = pyautogui.position()
+    pyautogui.moveTo(currentX-1, currentY)
+    time.sleep(sleep)
+    print(f"{now.hour}:{now.minute}:{now.second}\n")
+
+except:
+  print("\nSomething just happened, maybe the program has stopped")
 
