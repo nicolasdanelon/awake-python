@@ -1,31 +1,33 @@
 # Python Awake script
 
-## install python3
+Move the mouse so your computer don't get lock.
+
+### Install python3
 ```
 make getpython3
 ```
 
-## get pip
+### Get pip
 ```
 make getpip
 ```
 
-## install virtual env and create virtual env
+### Install virtual env & Create a virtual environment
 ```
-getvenv
-```
-
-## activating the virtual env
-```
-source env/bin/activate
+make getvenv
 ```
 
-## installing dependencies
+### Activating the virtual env
+```
+make getin
+```
+
+### Installing dependencies
 ```
 make install
 ```
 
-## running the software
+### Running the software
 ```
 make run
 ```
