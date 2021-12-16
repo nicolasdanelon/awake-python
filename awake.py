@@ -8,10 +8,11 @@ pyautogui.FAILSAFE = False
 try:
   while(True):
     now = datetime.datetime.now()
+
     currentX, currentY = pyautogui.position()
     pyautogui.moveTo(currentX+1, currentY)
-    print(f"{now.hour}:{now.minute}:{now.second}\n")
     time.sleep(sleep)
+    print(f"{now.hour}:{now.minute}:{now.second}\n")
 
     currentX, currentY = pyautogui.position()
     pyautogui.moveTo(currentX-1, currentY)
@@ -20,4 +21,3 @@ try:
 
 except:
   print("\nSomething just happened, maybe the program has stopped")
-
