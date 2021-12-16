@@ -1,28 +1,18 @@
 # Python Awake script
 
-## get pip
-```
- curl https://bootstrap.pypa.io/get-pip.py > get.py
-```
-
 ## install python3
 ```
-brew install python@3.7
+make getpython3
 ```
 
-## install pip
+## get pip
 ```
-python3 get.py
-```
-
-## install virtual env
-```
-pip install virtualenv
+make getpip
 ```
 
-## create virtual env
+## install virtual env and create virtual env
 ```
-virtualenv env
+getvenv
 ```
 
 ## activating the virtual env
@@ -32,7 +22,7 @@ source env/bin/activate
 
 ## installing dependencies
 ```
-pip install pyautogui
+make install
 ```
 
 ## running the software
