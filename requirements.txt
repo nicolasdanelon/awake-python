@@ -154,7 +154,7 @@ PyRect==0.1.4
 PyScreeze==0.1.28
 pytweening==1.0.4
 rangehttpserver==1.2.0
-requests==2.31.0
+requests==2.32.2
 rubicon-objc==0.4.2
 six==1.16.0
 typing_extensions==4.0.1
